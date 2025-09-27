@@ -1,38 +1,64 @@
-📊 Financial Sentiment Analyzer (Python, ML + FinBERT)
+📊 Financial Sentiment Analysis using Python & ML
 
-This project is a Financial Text Sentiment Analyzer built in Python, combining traditional ML models (TF-IDF + Logistic Regression, SVM, Naive Bayes) with state-of-the-art NLP (FinBERT).
-It also performs stock correlation analysis, linking sentiment in financial headlines to real market returns.
+This project applies Machine Learning techniques to classify financial news headlines into Positive, Negative, or Neutral sentiments.
+It demonstrates text preprocessing, feature engineering, model training, evaluation, and visualization – essential skills for data science & ML engineering roles.
 
 🚀 Features
 
-Classical ML Pipeline
+Data Preprocessing: tokenization, stopword removal, stemming, TF-IDF vectorization
 
-TF-IDF vectorization
+Models Implemented:
 
-Logistic Regression / SVM / Naive Bayes with GridSearchCV
+Logistic Regression
 
-Evaluation: accuracy, F1, confusion matrix, ROC curves
+Support Vector Machine (SVM)
 
-FinBERT Integration
+Naive Bayes
 
-Transformer model fine-tuned for financial sentiment
+Model Comparison: Accuracy, cross-validation scores, classification reports
 
-Predicts sentiment on sample and real news headlines
+Visualization: Confusion matrices heatmaps for performance insights
 
-GPU-accelerated if CUDA is available
+Real-World Predictions: Sentiment classification on sample financial news headlines
 
-Stock Price Correlation
+🛠️ Tech Stack
 
-Scrapes financial headlines from Yahoo Finance (via yfinance)
+Languages: Python
 
-Aggregates daily sentiment scores
+Libraries: scikit-learn, nltk, matplotlib, seaborn, pandas, numpy
 
-Visualizes sentiment vs return correlation
+📊 Results
+🔹 Model Performance
+Model	Accuracy    	CV Mean Score
+Logistic Regression	  ~66%	~75%
+Support Vector Machine	~66%	~71%
+Naive Bayes	              83%	87%
 
-Visualization
+👉 Naive Bayes performed the best overall.
 
-Confusion matrix heatmaps
+🔹 Confusion Matrices
 
-ROC curves for each model
+Each heatmap below shows model predictions vs. true labels:
 
-Sentiment vs stock return scatter plots
+(insert your confusion matrix screenshots here)
+
+🔹 Example Predictions
+
+On unseen financial news headlines:
+
+Headline	Logistic Regression	SVM	Naive Bayes
+Federal Reserve raises interest rates	Positive	Positive	Negative
+Tech stocks soar after earnings report	Positive	Positive	Positive
+Investors remain cautious amid inflation	Negative	Negative	Negative
+Company announces major layoffs	Positive ❌	Positive ❌	Positive ❌
+Markets close flat after volatile session	Neutral	Neutral	Neutral
+
+🎯 Key Takeaways
+
+Learned how to preprocess financial text data effectively.
+
+Compared multiple ML models on the same dataset.
+
+Gained insights into model evaluation using accuracy, confusion matrices, and real-world examples.
+
+Built a project that demonstrates data science + machine learning fundamentals clearly.
